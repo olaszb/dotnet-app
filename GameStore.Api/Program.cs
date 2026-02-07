@@ -8,10 +8,13 @@ builder.Services.AddValidation();
 var connectionString = "Data Source=GameStore.db";
 builder.Services.AddSqlite<GameStoreContext>(connectionString);
 
+
 var app = builder.Build();
 
 app.UsePathBase("/api");
 
 app.MapGamesEndpoints();
+
+app.MigrateDb();
 
 app.Run();
