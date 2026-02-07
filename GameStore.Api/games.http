@@ -1,6 +1,6 @@
 GET http://localhost:5193/api/games
 ###
-GET http://localhost:5193/api/games/5
+GET http://localhost:5193/api/games/1
 ###
 POST http://localhost:5193/api/games
 Content-Type: application/json
@@ -12,3 +12,12 @@ Content-Type: application/json
   "releaseDate": "2002-11-17"
 }
 ###
+PUT http://localhost:5193/api/games/1
+Content-Type: application/json
+
+{
+  "name": "Street Fighter II: Champion Edition",
+  "genre": "Fighting",
+  "price": 19.99,
+  "releaseDate": "1992-07-15"
+}
