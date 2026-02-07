@@ -1,1 +1,14 @@
 GET http://localhost:5193/api/games
+###
+GET http://localhost:5193/api/games/5
+###
+POST http://localhost:5193/api/games
+Content-Type: application/json
+
+{
+  "name": "Metroid Prime",
+  "genre": "Action-Adventure",
+  "price": 29.99,
+  "releaseDate": "2002-11-17"
+}
+###
