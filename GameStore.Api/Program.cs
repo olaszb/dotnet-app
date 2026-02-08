@@ -13,6 +13,7 @@ var app = builder.Build();
 app.UsePathBase("/api");
 
 app.MapGamesEndpoints();
+app.MapGenresEndpoints();
 
 app.MigrateDb();
 
